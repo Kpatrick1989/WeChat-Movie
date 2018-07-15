@@ -1,0 +1,79 @@
+Page{
+    background-color: #F7F9FB;
+}
+
+.bg{
+    background-color: #ffffff;
+    display: block;
+    margin: 100rpx 40rpx 0;
+    height: 965rpx;
+    border: 1rpx solid #ccc;
+    border-radius: 10rpx;
+    box-sizing: border-box;
+}
+
+.bg .moviePoster{
+    width: 242rpx;
+    margin-left: 50%;
+    transform: translate(-50%,-60rpx);
+    box-shadow: 0 0 20px rgba(100, 100, 100, .4)
+}
+
+.bg .title{
+    text-align: center;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #000;
+    margin-top: -30rpx;
+}
+
+.bg .description{
+    text-align: center;
+    color: #333;
+    margin: 45rpx 80rpx;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 45rpx 60rpx 48rpx;
+}
+
+.btn-container button{
+    width: 248rpx;
+    height: 80rpx;
+    text-align: center;
+    background-color: #fff;
+    font-size: 24rpx;
+    line-height: 80rpx;
+    color: #7999AA;
+    /* border: 1rpx solid #ccc; */
+    border-radius: 10rpx;
+}
+
+.btn-container button image{
+    width: 40rpx;
+    margin-right: 20rpx;
+    vertical-align: middle;
+    margin-top: -3rpx;
+}
+
+.comment-ipt {
+  width: 100%;
+  height: 207rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+
+.done-button{
+    width: 100%;
+    height: 96rpx;
+    background-color: #00BB31;
+    text-align: center;
+    line-height: 96rpx;
+    font-size: 30rpx;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}

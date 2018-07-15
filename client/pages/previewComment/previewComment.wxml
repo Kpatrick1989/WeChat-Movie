@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+<view class='bg'>
+    <image src='{{movie.image}}' mode="widthFix" class='moviePoster'></image>
+    <view class='title'>{{movie.title}}</view>
+    <view class='info'><image src="{{userInfo.avatarUrl}}" class='avatar'></image>{{userInfo.nickName}}的影评</view>
+    <view class='comment'>
+        <view class='symbol'>“</view>
+        <view class='content'>
+            <!-- 根据选择的评论类型来显示对应的评论类型 -->
+            <view class='description' wx:if="{{tapIndex == 0}}">{{commentValue}}</view>
+            <view class='record' wx:if="{{tapIndex == 1}}">
+                <image src="{{iconPath}}" mode="widthFix" bindtap='playRecord'></image>{{duration}}s
+            </view>
+        </view>
+    </view>
+    <view class='btn-container'>
+        <view bindtap='backEdit'><image src='../../images/return-back.png' mode="widthFix"></image>重新编辑</view>
+        <view bindtap='postComment'><image src='../../images/paper_plane.png' mode="widthFix"></image>发布影评</view>
+    </view>
+</view>

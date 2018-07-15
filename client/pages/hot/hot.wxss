@@ -1,0 +1,36 @@
+Page{
+    background-color: #F7F9FB;
+}
+
+.box{
+    width: 655rpx;
+    height: 295rpx;
+    border: 1rpx solid #ccc;
+    background-color: #fff;
+    margin: 40rpx auto;
+    display: flex;
+}
+
+.moviePoster image{
+    width: 211rpx;
+    height: 295rpx;
+}
+
+.movieInfo{
+    margin-left: 42rpx;
+}
+
+.movieInfo .title{
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #000;
+    margin-top: 86rpx;
+    display: block;
+}
+
+.movieInfo .category{
+    font-size: 24rpx;
+    line-height: 0;
+    display: block;
+    margin-top: 65rpx;
+}

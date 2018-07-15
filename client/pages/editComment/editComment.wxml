@@ -1,0 +1,14 @@
+<view class='bg'>
+    <image src='{{movie.image}}' mode="widthFix" class='moviePoster'></image>
+    <view class='title'>{{movie.title}}</view>
+    <!-- 根据选择的评论形式显示对应的表单 -->
+    <view class='description' wx:if="{{tapIndex == 0}}">
+        <textarea class='comment-ipt' placeholder-class='comment-placeholder' placeholder='输入你的影评内容...' auto-focus maxlength='255' bindinput='onInput'></textarea>
+    </view>
+    <!-- 根据授权状态显示录音按钮或者授权按钮 -->
+    <view class='btn-container' wx:if="{{tapIndex == 1}}">
+        <button bindtap='addVoice' wx:if="{{authorize}}"><image src='../../images/record.png' mode="widthFix"></image>{{buttonText}}</button>
+        <button open-type="openSetting" wx:if="{{!authorize}}">点击此处授权录音</button>
+    </view>
+</view>
+<view class='done-button' bindtap='toPreview'>完成</view>

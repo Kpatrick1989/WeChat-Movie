@@ -1,0 +1,9 @@
+<view wx:for="{{movieList}}" wx:key="{{item.id}}" class='box' bindtap='toDetail' data-id="{{item.id}}">
+    <view class='moviePoster'>
+        <image src='{{item.image}}'></image>
+    </view>
+    <view class='movieInfo'>
+        <text class='title'>{{item.title}}</text>
+        <text class='category'>类型：{{item.category}}</text>
+    </view>
+</view>

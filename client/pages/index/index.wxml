@@ -1,0 +1,16 @@
+<view class="container">
+    <view class='content'>
+        <image src='{{hotMovie.image}}' mode="widthFix" class='moviePoster' bindtap='toDetail'></image>
+        <text>{{hotMovie.title}}</text>
+        <!-- 判断是否有评论，如果没有评论则显示为暂无评论 -->
+        <view wx:if="{{commentList.length == 0}}">暂无评论</view>
+        <view wx:else>
+        <!-- 如果有评论，则显示第一条评论信息 -->
+            <view bindtap='toCommentDetail'><image src="{{commentList[0].avatar}}" class='avatar'></image>{{commentList[0].username}}给你推荐了一部电影</view>
+        </view>
+    </view>
+    <view class='btn-container'>
+        <view bindtap='toHot'><image src='../../images/thumbUp.png' mode="widthFix"></image>热门</view>
+        <view bindtap='toMine'><image src='../../images/mine.png' mode="widthFix"></image>我的</view>
+    </view>
+</view>

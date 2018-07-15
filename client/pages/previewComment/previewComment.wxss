@@ -1,0 +1,111 @@
+/* pages/detail/detail.wxss */
+Page{
+    background-color: #F7F9FB;
+}
+
+.bg{
+    background-color: #ffffff;
+    display: block;
+    margin: 100rpx 40rpx 65rpx;
+    border: 1rpx solid #ccc;
+    border-radius: 10rpx;
+}
+
+.moviePoster{
+    width: 180rpx;
+    margin-left: 50%;
+    transform: translate(-50%,-60rpx);
+    box-shadow: 0 0 20px rgba(100, 100, 100, .4)
+}
+
+.title{
+    text-align: center;
+    font-size: 40rpx;
+    font-weight: 600;
+    color: #000;
+    margin-top: -30rpx;
+}
+
+.info{
+    font-size: 28rpx;
+    color: #343B43;
+    margin-top: 40rpx;
+    margin-left: 64rpx;
+}
+
+.avatar{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 20rpx;
+}
+
+.comment{
+    margin-left: 100rpx;
+    margin-top: 40rpx;
+    display: flex;
+    min-height: 440rpx;
+}
+
+.symbol{
+    font-size: 60rpx;
+    font-weight: bold;
+    margin-right: 60rpx; 
+}
+
+.content{
+    padding-right: 60rpx;
+    padding-bottom: 60rpx;
+    box-sizing: border-box;
+}
+
+.description{
+    text-align: center;
+    color: #000;
+    font-size: 30rpx;
+    line-height: 50rpx;
+}
+
+
+.record{
+    width: 290rpx; height: 60rpx;
+    border-radius: 6rpx;
+    background-color: #E0E8ED;
+    border: 1px solid #8195A4;
+    line-height: 60rpx;
+    vertical-align: middle;
+    font-size: 30rpx;
+}
+
+.record image{
+    width: 40rpx;
+    vertical-align: middle;
+    margin-left: 40rpx;
+    margin-right: 10rpx;
+    margin-top: -5rpx;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60rpx 48rpx;
+}
+
+.btn-container view{
+    width: 45%;
+    height: 80rpx;
+    text-align: center;
+    background-color: #fff;
+    font-size: 24rpx;
+    line-height: 80rpx;
+    color: #7999AA;
+    border: 1rpx solid #ccc;
+    border-radius: 10rpx;
+}
+
+.btn-container view image{
+    width: 40rpx;
+    margin-right: 20rpx;
+    vertical-align: middle;
+}

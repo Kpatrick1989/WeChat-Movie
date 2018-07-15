@@ -1,0 +1,20 @@
+<!--pages/viewComment/viewComment.wxml-->
+<view wx:if="{{commentList.length > 0}}" class="box">
+    <view wx:for="{{commentList}}" wx:key="item.id" class='comment' bindtap='toDetail' data-index="{{index}}">
+        <view class='info'><image src="{{item.avatar}}" class='avatar'></image>{{item.username}}</view>
+        <view>
+            <!-- 根据选择的评论类型来显示对应的评论类型 -->
+            <view class='description' wx:if="{{item.tapIndex == 0}}">{{item.content}}</view>
+            <view class='record' wx:if="{{item.tapIndex == 1}}">
+                <image src="{{item.iconPath}}" mode="widthFix" bindtap='playRecord' data-index="{{index}}"></image>{{item.duration}}s
+            </view>
+        </view>
+    </view>
+</view>
+<view wx:else class='emptyComment'>
+    <image src='../../images/box.png' mode="widthFix"></image>
+    <view>暂无评论</view>
+</view>
+<view class='btn-container'>
+    <view bindtap='backIndex'>回到首页</view>
+</view>

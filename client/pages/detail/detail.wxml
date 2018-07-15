@@ -1,0 +1,9 @@
+<view class='bg'>
+    <image src='{{movie.image}}' mode="widthFix" class='moviePoster'></image>
+    <view class='title'>{{movie.title}}</view>
+    <view class='description'>{{movie.description}}</view>
+    <view class='btn-container'>
+        <view bindtap='viewComment'><image src='../../images/view.png' mode="widthFix"></image>查看影评</view>
+        <view bindtap='addComment'><image src='../../images/comment.png' mode="widthFix"></image>添加影评</view>
+    </view>
+</view>

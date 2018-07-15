@@ -1,0 +1,62 @@
+{
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wxc1c8d9f4cda7f845",
+	"projectname": "wechat-movie",
+	"libVersion": "2.1.1",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "编辑评论",
+					"pathName": "pages/editComment/editComment",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "预览",
+					"pathName": "pages/previewComment/previewComment",
+					"query": "id=9&title=当幸福来敲门&image=http://movie-1252100404.file.myqcloud.com/p2220721286.jpg&tapIndex=0&commentValue="
+				},
+				{
+					"id": -1,
+					"name": "影评列表",
+					"pathName": "pages/viewComment/viewComment",
+					"query": "id=4"
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				}
+			]
+		}
+	}
+}

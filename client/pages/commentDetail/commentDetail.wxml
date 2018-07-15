@@ -1,0 +1,19 @@
+<view class='bg'>
+    <image src='{{movie.image}}' mode="widthFix" class='moviePoster'></image>
+    <view class='title'>{{movie.title}}</view>
+    <view class='info'><image src="{{avatar}}" class='avatar'></image>{{username}}的影评</view>
+    <view class='comment'>
+        <view class='symbol'>“</view>
+        <view class='content'>
+            <!-- 根据选择的评论类型来显示对应的评论类型 -->
+            <view class='description' wx:if="{{tapIndex == 0}}">{{content}}</view>
+            <view class='record' wx:if="{{tapIndex == 1}}">
+                <image src="{{iconPath}}" mode="widthFix" bindtap='playRecord'></image>{{duration}}s
+            </view>
+        </view>
+    </view>
+    <view class='btn-container'>
+        <view bindtap='collectionComment'><image src='../../images/collection.png' mode="widthFix"></image>收藏影评</view>
+        <view bindtap='addComment'><image src='../../images/edit.png' mode="widthFix"></image>写影评</view>
+    </view>
+</view>
